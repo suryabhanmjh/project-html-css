@@ -113,3 +113,13 @@ button{
     font-size: 10px;
     margin-top: 10px;
 }
+
+.demo{
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 90px;
+}
