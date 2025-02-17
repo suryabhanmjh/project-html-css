@@ -12,7 +12,9 @@ nav{
     background-color: #fff;;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
-    height: 13vh
+    height: 13vh;
+    
+    
 }
 
 nav ul{
@@ -121,5 +123,29 @@ button{
     justify-content: center;
     align-items: center;
     
-    padding: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.conrainer1{
+    display: flex;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
+
+.chooseDemo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    float: left;
 }
