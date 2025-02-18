@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,33 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
     <!-- Header  -->
     <header>
 
         <div>
-        <nav class="navigation">
-            <img src="./img/logo.png" alt="Logo">
-            <ul>
-                <li> <a href="feature.html">FEATURE</a> </li>
-                <li><a href="shortcode.html">SHORTCODE</a></li>
-                <li><a href="pages.html">PAGES</a></li>
-            </ul>
-        
-        
+            <nav class="navigation">
+                <img src="./img/logo.png" alt="Logo">
+                <ul>
+                    <li> <a href="feature.html">FEATURE</a> </li>
+                    <li><a href="shortcode.html">SHORTCODE</a></li>
+                    <li><a href="pages.html">PAGES</a></li>
+                </ul>
 
-        <div class="icons">
-            <i class="fa-duotone fa-solid fa-house"></i>
-            <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+
+
+                <div class="icons">
+                    <i class="fa-duotone fa-solid fa-house"></i>
+                    <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+
         </div>
-    </nav>
-
-    </div>
     </header>
 
     <main>
-        <section id="home"> 
+        <section id="home">
             <div class="container">
                 <div class="content">
                     <h1>HURST</h1>
@@ -47,11 +49,19 @@
         <section>
             <div class="demo">
                 <div class="container1">
-                    <div >
-                    <div class="chooseDemo">
-                        <h2 >CHOOSE YOUR DEMO</h2>
+                    <div class="row">
+                        <div class="chooseDemo">
+                            <h1>CHOOSE YOUR DEMO</h1>
+                        </div>
+                        <div class="demo-filter col-12">
+                            <button class="filter active" data-filter="all">All</button>
+                            <button class="filter" data-filter=".home">Home</button>
+                            <button class="filter" data-filter=".shop">Shop</button>
+                            <button class="filter" data-filter=".blog">Blog</button>
+                            <button class="filter" data-filter=".other">Other</button>
+                        </div>
+
                     </div>
-                </div>
 
                 </div>
 
@@ -64,4 +74,5 @@
 
     </footer>
 </body>
+
 </html>
