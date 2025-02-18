@@ -192,3 +192,25 @@ h1{
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+/* DEMO ITEM HOME */
+
+.demo-item{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    position: relative;
+    width: 100%;
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.demo-item a{
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    display: block;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
