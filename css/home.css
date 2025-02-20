@@ -158,6 +158,17 @@ button{
     margin-right: -15px;
 }
 
+#homediv1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 h1{
     display: block;
     margin-block-start: 0.67em;
@@ -195,7 +206,72 @@ h1{
 
 /* DEMO ITEM HOME */
 
-.demo-item{
+ /* .demo-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} */
+
+.row{
+
+}
+.demo-content .mix{
+    margin-bottom: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.demo-content .mix a h3{
+    font-size: 14px;
+    margin: 0;
+    padding: 15px 0;
+    text-transform: uppercase;
+    transition: all 0.3sease 0s;
+    font-weight: 600;
+}
+
+.demo-content .mix a{
+    background: #fff none repeat scroll 0 0;
+    display: block;
+}
+
+a:hover{
+    color: #C8A165;
+    text-decoration: none;
+    outline: 0;
+}
+
+.demo-content .mix a:hover{
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.demo-content .mix a:hover h3 {
+    color: #C8A165;
+}
+
+.demo-content:hover{
+    background-color: #f8f8f8;
+}
+
+.demo-content .mix a img{
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    transition: all 0.3sease 0s;
+}
+ .demo-item{
     display: flex;
     flex-direction: column;
     margin: 30px;
@@ -204,11 +280,11 @@ h1{
     float: left;
     height: 200px;
     padding-left: 15px;
-    padding-right: 15px;
-    border: 1px solid #1f1b1b;
+    padding-right: 15px; 
+    
 }
 
-.demo-item a{
+ .demo-item a{
     background: #fff none repeat scroll 0 0;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     display: block;
@@ -220,4 +296,4 @@ h1{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} 

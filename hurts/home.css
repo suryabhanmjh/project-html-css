@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #fff;;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    height: 13vh;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    list-style-type: none;
+    font-size: 8px;
+}
+
+nav ul li a:hover{
+    
+    color: rgb(237, 102, 53);
+    font-size: 9px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50px;
+    
+
+}
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 15px;
+}
