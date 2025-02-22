@@ -116,7 +116,15 @@ button{
     margin-top: 10px;
 }
 
-.demo{
+
+/* choose your demo */
+
+
+
+
+
+
+/* .demo{
     display: flex;
     overflow: hidden;
     text-align: center;
@@ -127,7 +135,7 @@ button{
     padding-bottom: 90px;
     overflow: hidden;
     flex-wrap: wrap;
-}
+} */
 
 /* .container1{
     display: flex;
@@ -141,7 +149,7 @@ button{
 
 } */
 
-.chooseDemo{
+/* .chooseDemo{
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -210,7 +218,7 @@ h1{
     border-bottom-right-radius: 20px;
 }
 
-/* DEMO ITEM HOME */
+ DEMO ITEM HOME
 
  .demo-content{
     display: flex;
@@ -229,7 +237,7 @@ h1{
     width: 25%;
     padding-left: 50px;
     padding-right: 50px;
-    /* margin-left: -18px; */
+    margin-left: -18px;
     margin-right: -18px;
 }
 
@@ -308,7 +316,7 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-} 
+}*/
 
 /* .mix{
     display: flex;
@@ -320,4 +328,92 @@ img{
     margin-top: 50px;
     gap: 10px;
     margin-bottom: 50px;
-} */
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.filter-buttons {
+    margin-bottom: 20px;
+}
+.filter {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #d4a373;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.filter.active {
+    background-color: #8c5c3b;
+}
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.demo-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.demo-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.demo-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+@media (max-width: 1024px) {
+    .demo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+}
