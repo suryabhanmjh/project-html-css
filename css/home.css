@@ -215,8 +215,7 @@ h1{
  .demo-content{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     width: 50%;
     margin-top: 20px;
@@ -230,7 +229,7 @@ h1{
     width: 25%;
     padding-left: 50px;
     padding-right: 50px;
-    margin-left: -18px;
+    /* margin-left: -18px; */
     margin-right: -18px;
 }
 
