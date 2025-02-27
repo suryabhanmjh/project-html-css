@@ -191,7 +191,24 @@ button{
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: box-shadow 0.3s ease, transform 0.3s ease;
+            animation: scale-up 2s;
+
         }
+
+        /* div animation */
+
+        @keyframes scale-up {
+            0% {
+              transform: scale(0.5);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+          
+          
+          
+
         .demo-item:hover {
             box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
             transform: translateY(-5px);
@@ -223,3 +240,58 @@ button{
                 grid-template-columns: 1fr;
             }
         }
+
+        /* RTL Version */
+
+        .rtl-banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 400px;
+            background-color: #c3925b;
+            padding: 20px;
+            color: white;
+        }
+
+        .rtl-text h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .rtl-text p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+        
+        .rtl-button {
+            background-color: white;
+            color: #C8A165;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 8px;
+            animation: move 6s linear infinite;
+
+        }
+
+        @keyframes move {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+          
+          
+        .rtl-button:hover {
+            background-color:antiquewhite;
+        }          
+        
+        .rtl-button:hover {
+            background-color:antiquewhite;
+        }
+        
