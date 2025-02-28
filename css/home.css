@@ -1,24 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #fff;;
+    background-color: #fff;
+    ;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     height: 13vh;
-    
-    
+
+
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-around;
     gap: 25px;
@@ -26,87 +27,87 @@ nav ul{
     font-size: 8px;
 }
 
-nav ul li a:hover{
-    
+nav ul li a:hover {
+
     color: rgb(237, 102, 53);
     font-size: 9px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-img{
+img {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 50px;
-    
+
 
 }
 
 
-.icons{
+.icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     gap: 15px;
 }
 
 /* home */
 
-#home{
+#home {
 
     width: 100%;
     height: 56vh;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-color:#f8f8f8;
+
+    background-color: #f8f8f8;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
 }
 
-.content{
+.content {
     text-align: center;
 }
 
-.conrainer{
+.conrainer {
     display: flex;
-    
+
     gap: 10px;
     margin-top: 5%;
 }
 
-#home h1{
+#home h1 {
     font-size: 30px;
     color: black;
     margin-bottom: 15px;
 }
 
-.p1{
+.p1 {
     font-size: 12px;
     color: black;
     align-items: center;
     margin-bottom: 5px;
-    
+
 }
 
-.p2{
+.p2 {
     font-size: 8px;
     color: rgb(3, 3, 3);
     align-items: center;
     padding: 6px;
 }
 
-span{
+span {
     color: rgb(237, 102, 53);
 }
 
-button{
+button {
     padding: 10px 20px;
     background-color: rgb(12, 12, 12);
     color: white;
@@ -132,166 +133,289 @@ button{
 
 /* choose your demo */
 
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            position: relative;
-            display: inline-block;
-        }
-        
-        h2::after {
-            content: "";
-            display: block;
-            width: 80px; /* Adjust width of underline */
-            height: 2px;
-            background-color: rgb(189, 194, 189);
-            margin: 8px auto 0; /* Centers the underline */
-        }
-        
-        .filter-buttons {
-            margin-bottom: 20px;
-        }
-        .filter {
-            padding: 10px 20px;
-            margin: 5px;
-            border: none;
-            background-color: #eee;
-            color: rgb(17, 17, 17);
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .filter:hover {
-            background-color: #b88b5b;
-            transform: scale(1.05);
-        }
-        .filter.active {
-            background-color: #b88b5b;
-          
-        }
-        .filter.active:hover {
-            background-color: #7a4e32;
-        }
-        .demo-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            justify-content: center;
-        }
-        .demo-item {
-            cursor: pointer;
-            background: white;
-            /* padding: 15px; */
-            /* border-radius: 10px; */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-            animation: scale-up 2s;
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
 
-        }
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
 
-        /* div animation */
+.underline::after {
+    content: "";
+    display: block;
+    width: 80px;
+    /* Adjust width of underline */
+    height: 2px;
+    background-color: rgb(189, 194, 189);
+    margin: 8px auto 0;
+    /* Centers the underline */
+}
 
-        @keyframes scale-up {
-            0% {
-              transform: scale(0.5);
-            }
-            100% {
-              transform: scale(1);
-            }
-          }
-          
-          
-          
+.filter-buttons {
+    margin-bottom: 20px;
+}
 
-        .demo-item:hover {
-            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
-            transform: translateY(-5px);
-        }
-        .demo-item img {
-            width: 100%;
-            /* border-radius: 10px; */
-        }
-        .demo-item h3 {
-          margin-bottom: 10px;
-            font-size: 10px;
-            transition: color 0.3s ease;
-        }
-        .demo-item:hover h3 {
-            color: #C8A165;
-        }
-        @media (max-width: 1024px) {
-            .demo-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        @media (max-width: 768px) {
-            .demo-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 480px) {
-            .demo-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+.filter {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #eee;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-        /* RTL Version */
+.filter:hover {
+    background-color: #b88b5b;
+    transform: scale(1.05);
+}
 
-        .rtl-banner{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 400px;
-            background-color: #c3925b;
-            padding: 20px;
-            color: white;
-        }
+.filter.active {
+    background-color: #b88b5b;
 
-        .rtl-text h2 {
-            margin: 0;
-            font-size: 24px;
-        }
+}
 
-        .rtl-text p {
-            margin: 5px 0 0;
-            font-size: 14px;
-        }
-        
-        .rtl-button {
-            background-color: white;
-            color: #C8A165;
-            border: none;
-            padding: 8px 16px;
-            cursor: pointer;
-            font-size: 8px;
-            animation: move 6s linear infinite;
+.filter.active:hover {
+    background-color: #7a4e32;
+}
 
-        }
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
 
-        @keyframes move {
-            0% {
-              opacity: 1;
-            }
-            50% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-          
-          
-        .rtl-button:hover {
-            background-color:antiquewhite;
-        }          
-        
-        .rtl-button:hover {
-            background-color:antiquewhite;
-        }
-        
+.demo-item {
+    cursor: pointer;
+    background: white;
+    /* padding: 15px; */
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    animation: scale-up 2s;
+
+}
+
+/* div animation */
+
+@keyframes scale-up {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+.demo-item:hover {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.demo-item img {
+    width: 100%;
+    /* border-radius: 10px; */
+}
+
+.demo-item h3 {
+    margin-bottom: 10px;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+
+.demo-item:hover h3 {
+    color: #C8A165;
+}
+
+@media (max-width: 1024px) {
+    .demo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RTL Version */
+
+.rtl-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    background-color: #c3925b;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+    /* Jab screen choti ho to wrap ho jaye */
+    text-align: center;
+}
+
+/* Choti screen ke liye styles */
+@media (max-width: 768px) {
+    .rtl-banner {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.rtl-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.rtl-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.rtl-button {
+    background-color: white;
+    color: #C8A165;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 8px;
+    animation: move 6s linear infinite;
+
+}
+
+@keyframes move {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.rtl-button:hover {
+    background-color: antiquewhite;
+}
+
+.rtl-button:hover {
+    background-color: antiquewhite;
+}
+
+
+
+
+
+/* Availabe Shortcodes */
+
+
+.shortcodes {
+    text-align: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+    /* margin: 20px 0; */
+}
+.shortcodes p{
+    margin-bottom: -10px;
+    font-size: 12px;
+}
+
+.shortcode-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+    justify-items: center;
+    padding-left:  150px;
+    padding-right: 150px;
+    margin-top: 50px;
+
+}
+
+.shortcode-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 52px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+  
+    transition: background-color 0.3s ease;
+}
+
+.shortcode-grid a:hover {
+    background-color: #4d54d6;
+}
+
+@media (max-width: 1024px) {
+    .shortcode-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .shortcode-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .shortcode-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* html page */
+
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 20px; Adds spacing between items */
+    text-align: center;
+}
+
+.responsive-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row by default */
+    padding: 20px;
+    background: #f5f5f5; /* Example background */
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .responsive-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-item {
+        flex: 1 1 100%; /* 1 item per row on mobile */
+    }
+}
