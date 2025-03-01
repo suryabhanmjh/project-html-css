@@ -439,94 +439,63 @@ h2 {
     
 }
 
-/* hurts features */
-
-.features {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.features .underline::after {
-    content: "";
-    display: block;
-    width: 80px;
-    /* Adjust width of underline */
-    height: 2px;
-    background-color: rgb(189, 194, 189);
-    margin: 4px auto 0;
-    /* Centers the underline */
-}
-
-
-
-
-
-.feature {
-    padding: 50px 0;
+/* Features Section */
+.features-section {
     text-align: center;
-}
-.feature-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 40px 20px;
+    background: #f8f8f8;
 }
 
-.feature h2 {
+.features-section h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.feature p {
+.features-section p {
     font-size: 16px;
+    color: #777;
     margin-bottom: 20px;
 }
 
-.feature ul {
-    
+/* Features List Container */
+.features-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    font-size: 9px;
-    padding-left: 100px;
-    padding-right: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-
-.feature li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-
-
+/* Individual Lists */
+.features-list {
+    list-style: none;
+    padding: 0;
+    max-width: 300px;
 }
 
+.features-list li {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+}
 
-@media (max-width: 1024px) {
-    .feature ul {
-        grid-template-columns: repeat(2, 1fr);
+/* Footer Section */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+}
+
+.footer span {
+    color: #f4b400; /* Highlighted color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
-@media (min-width: 768px) {
-    .feature ul {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .feature ul {
-        grid-template-columns: 1fr;
-    }
-}
-

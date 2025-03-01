@@ -1,54 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #fff;;
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    height: 13vh;
-    
-    
-}
-
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    gap: 25px;
-    list-style-type: none;
-    font-size: 8px;
-}
-
-nav ul li a:hover{
-    
-    color: rgb(237, 102, 53);
-    font-size: 9px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-img{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 50px;
-    
-
-}
-
-
-.icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 15px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #a67c52;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .cart {
+            font-size: 20px;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center;
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            text-align: center;
+        }
+        .hero-content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        .product {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .price {
+            font-size: 18px;
+            color: #a67c52;
+            font-weight: bold;
+        }
+        button {
+            background: #a67c52;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #8a5f3e;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
