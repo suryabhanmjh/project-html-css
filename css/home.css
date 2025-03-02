@@ -107,7 +107,7 @@ span {
     color: rgb(237, 102, 53);
 }
 
-button {
+.buy {
     padding: 10px 20px;
     background-color: rgb(12, 12, 12);
     color: white;
