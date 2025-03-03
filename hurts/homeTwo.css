@@ -51,7 +51,7 @@ nav ul li a {
 .carousel {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 200px;
     overflow: hidden;
 }
 .slide {
