@@ -72,3 +72,10 @@ nav ul li a {
     padding: 10px;
     border-radius: 5px;
 }
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
