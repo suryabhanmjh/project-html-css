@@ -7,6 +7,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -24,32 +25,12 @@ body {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
     margin-bottom: 20px;
     font-size: 24px;
-}
-
-.toggle-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.toggle-buttons button {
-    background: none;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    color: #555;
-}
-
-.toggle-buttons button.active {
-    font-weight: bold;
-    color: #e60000;
-    border-bottom: 2px solid #e60000;
 }
 
 form input {
@@ -79,5 +60,54 @@ form input {
 }
 
 .forgot-link:hover {
+    color: #e60000;
+}
+
+/* New Customer Section */
+.new-customer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.new-customer a {
+    color: #e60000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-customer a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Login Link */
+.back-to-login {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+.back-to-login:hover {
+    color: #e60000;
+}
+
+/* Contact Us Section */
+.contact-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+.contact-box p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+.contact-box strong {
     color: #e60000;
 }
