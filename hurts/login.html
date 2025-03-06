@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2 id="form-title">Login</h2>
+            <div class="toggle-buttons">
+                <button onclick="showLogin()" id="login-btn" class="active">Login</button>
+                <button onclick="showRegister()" id="register-btn">Register</button>
+            </div>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+                <a href="#" class="forgot-link">Forgot Password?</a>
+            </form>
+            <form id="register-form" style="display: none;">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script>
+        function showLogin() {
+            document.getElementById("form-title").innerText = "Login";
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("register-form").style.display = "none";
+            document.getElementById("login-btn").classList.add("active");
+            document.getElementById("register-btn").classList.remove("active");
+        }
+
+        function showRegister() {
+            document.getElementById("form-title").innerText = "Register";
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("register-form").style.display = "block";
+            document.getElementById("register-btn").classList.add("active");
+            document.getElementById("login-btn").classList.remove("active");
+        }
+    </script> -->
+</body>
+</html>
