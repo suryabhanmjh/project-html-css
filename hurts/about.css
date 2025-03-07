@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background: #e60000;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: white;
+    gap: 40px;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.mission, .vision {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.mission h2, .vision h2 {
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.team {
+    background: white;
+    padding: 40px;
+}
+
+.team h2 {
+    font-size: 28px;
+    color: #e60000;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.member h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
