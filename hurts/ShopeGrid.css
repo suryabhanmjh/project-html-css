@@ -38,7 +38,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background: url('hero-image.jpg') center/cover no-repeat;
+    background: url('') center/cover no-repeat;
     height: 200px;
     display: flex;
     align-items: center;
