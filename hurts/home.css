@@ -98,16 +98,6 @@ nav ul li a {
 
 /* scroll div */
 
-/* .scroll-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-} */
-
-/* Add this to home.css */
 .carousel-container {
     width: 100%;
     overflow: hidden;
