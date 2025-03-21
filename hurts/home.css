@@ -104,7 +104,7 @@ nav ul li a {
     position: relative;
 }
 
-.carousel {
+.carousel1 {
     display: flex;
     gap: 20px;
     overflow-x: auto;
